@@ -1,3 +1,6 @@
+require("dotenv").config({
+  path:".env",
+})
 module.exports = {
   siteMetadata: {
     title: "Gatsby Starter - Forty V2",
@@ -23,12 +26,14 @@ module.exports = {
     {
       resolve: `gatsby-source-wordpress`,
       options: {
-        baseUrl: "ec2-54-79-66-151.ap-southeast-2.compute.amazonaws.com",
-        protocol: `http`,
+        baseUrl: process.env.API_URL,
+       // baseUrl: "ec2-54-79-66-151.ap-southeast-2.compute.amazonaws.com",
+        protocol: process.env.API_PROTOCOL,
         useACF: true,
         hostingWPCOM: false,
       }
 
-    }
+    },
+    `gatsby-plugin-netlify`,
   ],
 }
