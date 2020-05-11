@@ -19,6 +19,16 @@ module.exports = {
       },
     },
     'gatsby-plugin-sass',
-    'gatsby-plugin-offline'
+    'gatsby-plugin-offline',
+    {
+      resolve: `gatsby-source-wordpress`,
+      options: {
+        baseUrl: "ec2-54-79-66-151.ap-southeast-2.compute.amazonaws.com",
+        protocol: `http`,
+        useACF: true,
+        hostingWPCOM: false,
+      }
+
+    }
   ],
 }

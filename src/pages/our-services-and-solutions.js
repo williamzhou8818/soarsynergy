@@ -8,7 +8,7 @@ import pic08 from '../assets/images/pic08.jpg'
 import pic09 from '../assets/images/pic09.jpg'
 import pic10 from '../assets/images/pic10.jpg'
 
-const Landing = (props) => (
+const ServiceAndSolutions = (props) => (
     <Layout>
         <Helmet>
             <title>Our Services & Solutions</title>
@@ -34,11 +34,11 @@ const Landing = (props) => (
                     <div className="content">
                         <div className="inner">
                             <header className="major">
-                                <h3>Business</h3>
+                                <h3 >Business</h3>
                             </header>
                             <p>Deep diving into the concept, structure and end to end strategy for your business. Reengineering to streamline business processes, improve life span and effectiveness of operations.</p>
                             <ul className="actions">
-                                <li><Link to="/generic" className="button">Learn more</Link></li>
+                                <li><Link to="/buniess" className="button">Learn more</Link></li>
                             </ul>
                         </div>
                     </div>
@@ -54,7 +54,7 @@ const Landing = (props) => (
                             </header>
                             <p>We deliver beautiful and functional online solutions that integrate seamlessly into your existing setup – feature-rich and adaptable.</p>
                             <ul className="actions">
-                                <li><Link to="/generic" className="button">Learn more</Link></li>
+                                <li><Link to="/technology" className="button">Learn more</Link></li>
                             </ul>
                         </div>
                     </div>
@@ -70,7 +70,7 @@ const Landing = (props) => (
                             </header>
                             <p>Our marketing experts develop strategies that resonate and connect your audience to your brand’s story. Social, SEO, Paid Placement, Chatbots. Ask us how we can activate your brand in the real world.</p>
                             <ul className="actions">
-                                <li><Link to="/generic" className="button">Learn more</Link></li>
+                                <li><Link to="/marking" className="button">Learn more</Link></li>
                             </ul>
                         </div>
                     </div>
@@ -86,7 +86,7 @@ const Landing = (props) => (
                             </header>
                             <p>We offer support by way of technology, strategy and investment, meaning you can rest easy knowing we’ll be there for the long run.</p>
                             <ul className="actions">
-                                <li><Link to="/generic" className="button">Learn more</Link></li>
+                                <li><Link to="/startup" className="button">Learn more</Link></li>
                             </ul>
                         </div>
                     </div>
@@ -97,4 +97,4 @@ const Landing = (props) => (
     </Layout>
 )
 
-export default Landing
+export default ServiceAndSolutions
