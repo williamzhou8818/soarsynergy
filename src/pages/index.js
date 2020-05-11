@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import Banner from '../components/Banner'
-
+import Client4 from '../assets/images/client-4.png'
 import pic01 from '../assets/images/pic01.jpg'
 // import pic02 from '../assets/images/pic02.jpg'
 // import pic03 from '../assets/images/pic03.jpg'
@@ -54,7 +54,7 @@ class HomeIndex extends React.Component {
                                         <header>
                                             <div  className="story">
                                                <figure className="story__shape">
-                                                    <img src="http://ec2-54-79-66-151.ap-southeast-2.compute.amazonaws.com/wp-content/uploads/2019/11/client-4.png" 
+                                                    <img src={Client4} 
                                                           alt="Inam Ullah"
                                                           className="story__img"/>
                                                     <figcaption class="story__caption"></figcaption>
